@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.flag {
+  height: 100%;
+  width: 100%;
+};
+span.title{
+  text-decoration-line: underline !important;
+  font-weight: bold !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.card-body{
+  display:flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+.container{
+  margin-top: 20px;
+}
+.col-6{
+  padding-right: 20px;
+}
+.IPLogo{
+  height: 3.5rem;
+  width: auto;
+}
+h1{
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
   color: white;
 }
+/*
+@media (max-width: 1800px){
+  .container {
+    max-width: 1760px !important;
+  }
 
-.App-link {
-  color: #61dafb;
+}
+@media (max-width: 1600px){
+  .container {
+    max-width: 1560px !important;
+  }
+
+}
+@media (max-width: 1400px){
+  .container {
+    max-width: 1360px !important;
+  }
+
+}
+@media (max-width: 1320px){
+  .container {
+    max-width: 1280px !important;
+  }
+
+}
+@media (max-width: 1220px){
+  .container {
+    max-width: 1180px !important;
+  }
+}
+@media (max-width: 1120px){
+  .container {
+    max-width: 1120px !important;
+  }
+}
+@media (max-width: 1030px){
+  .container {
+    max-width: 1030px !important;
+  }
+
+}
+@media (max-width: 934px){
+  .container {
+    max-width: 934px !important;
+  }
+
+}
+@media (max-width: 768px){
+  .container {
+    max-width: 768px !important;
+  }
+}*/
+@media (max-width: 576px){
+  .card-text {
+    font-size: larger !important;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-text{
+  margin-bottom: 0 !important;
+  font-size: x-large;
+  color:white;
+}
+.card-img-top{
+  outline-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  margin-top: 0.4rem;
+}
+.card{
+  background-color: black;
+  outline-color: white;
+  outline-style: solid;
+  outline-width: thin;
 }
