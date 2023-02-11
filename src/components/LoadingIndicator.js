@@ -1,4 +1,4 @@
-import { Grid } from "react-loader-spinner";
+import { MagnifyingGlass } from "react-loader-spinner";
 
 export default function LoadingIndicator() {
   return (
@@ -12,15 +12,15 @@ export default function LoadingIndicator() {
         alignItems: "center",
       }}
     >
-      <Grid
+      <MagnifyingGlass
+        visible={true}
         height="80"
         width="80"
-        color="#4fa94d"
-        ariaLabel="grid-loading"
-        radius="12.5"
+        ariaLabel="MagnifyingGlass-loading"
         wrapperStyle={{}}
-        wrapperClass=""
-        visible={true}
+        wrapperClass="MagnifyingGlass-wrapper"
+        glassColor="#c0efff"
+        color="#e15b64"
       />
     </div>
   );

@@ -172,22 +172,3 @@ function App() {
 }
 
 export default App;
-
-/*
-<div className="col-4" style={{ objectFit: "contain" }}>
-                <img className="flag" src={flag} />
-              </div>
-              
-              <div className="col-4">
-              <h4>Your IP Address Is:</h4>
-              <p>{IPAddress.ip}</p>
-              <h4>Your Internet Service Provider Is:</h4>
-              <p>{IPAddress.isp}</p>
-              <h4>You Are Currently Located In:</h4>
-              <p>
-                {IPAddress.location.city}, {IPAddress.location.region},{" "}
-                {IPAddress.location.country}
-              </p>
-              <h4>The Local Time & Date Is:</h4>
-              <p>{localTime}</p>
-            </div>*/
