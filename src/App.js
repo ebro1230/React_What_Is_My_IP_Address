@@ -97,68 +97,70 @@ function App() {
           <LoadingIndicator />
         ) : IPAddress.ip ? (
           <>
-            <div className="col-6">
-              <Location
-                IPAddress={IPAddress}
-                position={position}
-                height={height}
-              />
-            </div>
             {flag ? (
-              <Card className="col-6">
-                <Card.Img variant="top" src={flag} />
-                <Card.Body>
-                  <Card.Text>
-                    <span
-                      className="title"
-                      style={{
-                        textDecorationLine: "underline",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      Your IP Address Is:
-                    </span>{" "}
-                    {IPAddress.ip}
-                  </Card.Text>
-                  <Card.Text>
-                    <span
-                      className="title"
-                      style={{
-                        textDecorationLine: "underline",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      Your Internet Service Provider Is:
-                    </span>{" "}
-                    {IPAddress.isp}
-                  </Card.Text>
-                  <Card.Text>
-                    <span
-                      className="title"
-                      style={{
-                        textDecorationLine: "underline",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      You Are Currently Located In:
-                    </span>{" "}
-                    {IPAddress.location.city}, {IPAddress.location.region},{" "}
-                    {IPAddress.location.country}
-                  </Card.Text>
-                  <Card.Text>
-                    <span
-                      className="title"
-                      style={{
-                        textDecorationLine: "underline",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      The Local Time & Date Is:
-                    </span>{" "}
-                    {localTime}
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+              <>
+                <Card className="col-lg-6 col-12">
+                  <Card.Img variant="top" src={flag} />
+                  <Card.Body>
+                    <Card.Text>
+                      <span
+                        className="title"
+                        style={{
+                          textDecorationLine: "underline",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Your IP Address Is:
+                      </span>{" "}
+                      {IPAddress.ip}
+                    </Card.Text>
+                    <Card.Text>
+                      <span
+                        className="title"
+                        style={{
+                          textDecorationLine: "underline",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Your Internet Service Provider Is:
+                      </span>{" "}
+                      {IPAddress.isp}
+                    </Card.Text>
+                    <Card.Text>
+                      <span
+                        className="title"
+                        style={{
+                          textDecorationLine: "underline",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        You Are Currently Located In:
+                      </span>{" "}
+                      {IPAddress.location.city}, {IPAddress.location.region},{" "}
+                      {IPAddress.location.country}
+                    </Card.Text>
+                    <Card.Text>
+                      <span
+                        className="title"
+                        style={{
+                          textDecorationLine: "underline",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        The Local Time & Date Is:
+                      </span>{" "}
+                      {localTime}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <div className="col-lg-6 col-12">
+                  <Location
+                    IPAddress={IPAddress}
+                    position={position}
+                    height={height}
+                  />
+                </div>
+              </>
             ) : (
               error2
             )}

@@ -3,10 +3,6 @@
 body{
   background-color: black;
 }
-.flag {
-  height: 100%;
-  width: 100%;
-};
 span.title{
   text-decoration-line: underline !important;
   font-weight: bold !important;
@@ -84,11 +80,21 @@ h1{
     max-width: 768px !important;
   }
 }*/
-@media (max-width: 576px){
+@media (max-width: 590px){
   .card-text {
     font-size: larger !important;
   }
 }
+@media (max-width: 1030px){
+  .mapDiv {
+    max-height: 30rem !important;
+  }
+}
+@media screen and (orientation:portrait) { 
+  .portrait{
+    width:100% !important;
+  }
+ }
 
 .card-text{
   margin-bottom: 0 !important;
