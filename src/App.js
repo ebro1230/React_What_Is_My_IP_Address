@@ -147,7 +147,7 @@ function App() {
                           fontWeight: "bold",
                         }}
                       >
-                        The Local Time & Date Is:
+                        The Local Date & Time Is:
                       </span>{" "}
                       {localTime}
                     </Card.Text>
